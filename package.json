@@ -1,15 +1,21 @@
 {
-  "name": "canon-event",
+  "name": "fictional-fate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:turbo": "next dev --turbopack",
+    "clean": "rm -rf .next",
     "build": "next build",
     "start": "next start",
+    "start:demo": "next start -p 3000",
+    "demo": "npm run clean && npm run build && npm run start:demo",
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.1.6",
+    "framer-motion": "^12.34.0",
+    "lucide-react": "^0.563.0",
+    "next": "^15.5.12",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
@@ -20,7 +26,7 @@
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
-    "eslint-config-next": "16.1.6",
+    "eslint-config-next": "^15.5.12",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

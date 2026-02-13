@@ -22,5 +22,16 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  cursor: url("/cursors/cursor-main.png") 8 8, auto;
+}
+
+button,
+a,
+[role="button"],
+input,
+select,
+textarea,
+label {
+  cursor: url("/cursors/cursor-select.png") 8 8, pointer;
 }
